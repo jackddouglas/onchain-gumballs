@@ -26,7 +26,7 @@ export default function Gumball() {
     });
   }
 
-  function viewGumballs() {
+  function ViewGumballs() {
     const { data } = useReadContract({
       abi,
       address,
@@ -61,7 +61,7 @@ export default function Gumball() {
     <Card>
       <CardHeader>
         <CardTitle>Gumballs</CardTitle>
-        <CardDescription>Total Gumballs: {viewGumballs()?.toString()}</CardDescription>
+        <CardDescription>Total Gumballs: {ViewGumballs()?.toString()}</CardDescription>
       </CardHeader>
       <CardContent>
         <Button className="p-2" onClick={() => getGumball()}>Get a gumball</Button>
